@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our People</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .profile-container_1 {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .profile-container {
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .profile-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 25px;
+            margin-right: 25px; 
+        }
+
+        .profile-content {
+            max-width: 700px;
+            flex: 1;
+            margin-top: 100px;
+        }
+
+        .profile-content .back-link {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .profile-content .profile-name {
+            font-size: 38px;
+            margin: 12px 0;
+        }
+
+        .profile-content .profile-title {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .profile-content .profile-title a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .profile-content .profile-description {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .profile-content .contact-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+        .profile-content .contact-link:hover{
+            color: #0077cc;
+        }
+
+        .profile-content .contact-link img {
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .profile-container {
+                flex-direction: column; 
+                text-align: center;
+            }
+            .profile-container_1 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-bottom: 20px;
+            }
+
+            .profile-content {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .team-title {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 300px;
+            height: 400px;
+            flex: 1 1 calc(33.333% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            transition: box-shadow .4s ease-in-out
+        }
+        .team-member:hover{
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+
+        .team-member img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #000;
+        }
+
+        .team-member h4 {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .team-member p {
+            margin-top: 10px;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .cta-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-button a {
+            text-decoration: none;
+            background-color: #f4f4f4;
+            color: #1e90ff;
+            padding: 10px 20px;
+            font-weight: 300;
+            border: 1px solid #1e90ff;
+        }
+
+        .cta-button a:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="IMG-Photoroom.png" alt="Oliver Tonby" width="400px" height="50px">
+        </div>
+        <div class="profile-content">
+            <a href="#" class="back-link">&lt; Back to Welcome to McKinsey Singapore</a>
+            <h1 class="profile-name">Oliver Tonby</h1>
+            <p class="profile-title">Senior Partner, <a href="#">Singapore</a></p>
+            <p class="profile-description">Advises oil and gas, energy, and industrial clients on strategic, development, and operations issues; member of Singapore’s Future Economy Council</p>
+            <a href="#" class="contact-link"><img src="envelope-circle-fill-svgrepo-com.svg" alt="Email Icon" width="30px" height="30px"> Contact</a>
+            <a href="#" class="contact-link"><img src="linkedin-round-svgrepo-com.svg" alt="Linkedin Icon" width="28px" height="28px" style="margin-left: 10px;">LinkedIn</a>
+        </div>
+    </div>
+    <hr width="82%">
+    <div class="profile-container_1">
+        <div class="profile-image">
+            <img src="IMG-Photoroom.png" alt="Oliver Tonby" width="400px" height="50px">
+        </div>
+        <div class="profile-content">
+            <a href="#" class="back-link">&lt; Back to Welcome to McKinsey Singapore</a>
+            <h1 class="profile-name">Oliver Tonby</h1>
+            <p class="profile-title">Senior Partner, <a href="#">Singapore</a></p>
+            <p class="profile-description">Advises oil and gas, energy, and industrial clients on strategic, development, and operations issues; member of Singapore’s Future Economy Council</p>
+            <a href="#" class="contact-link"><img src="envelope-circle-fill-svgrepo-com.svg" alt="Email Icon" width="30px" height="30px"> Contact</a>
+            <a href="#" class="contact-link"><img src="linkedin-round-svgrepo-com.svg" alt="Linkedin Icon" width="28px" height="28px" style="margin-left: 10px;"> LinkedIn</a>
+        </div>
+    </div>
+    <hr width="82%">
+
+<div class="team-container">
+    <div class="team-title">Our People</div>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="hari_govindahari_fc_mask_profile_1536x1152.webp" alt="Oliver Tonby">
+            <h3>Oliver Tonby</h3>
+            <h4>Senior Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Advises oil and gas, energy, and industrial clients on strategic, development, and operations issues, member of Singapore's Future...</p>
+            
+        </div>
+        <div class="team-member">
+            <img src="hari_govindahari_fc_mask_profile_1536x1152.webp" alt="Albert Chang">
+            <h3>Albert Chang</h3>
+            <h4>Senior Partner and Managing Partner, Southeast Asia, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Leads our offices in Southeast Asia, partnering with clients across industries to achieve step-change performance improvements...</p>
+        </div>
+        <div class="team-member">
+            <img src="hari_govindahari_fc_mask_profile_1536x1152.webp" alt="Badrinath Ramanathan">
+            <h3>Badrinath Ramanathan</h3>
+            <h4>Senior Partner and Managing Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Leads our office in Singapore, advising financial institutions in Asia on strategy, business building, digital, and analytics...</p>
+        </div>
+        <div class="team-member">
+            <img src="yiping_goh_standard_profile_1536x1152.webp" alt="Kaushik Das">
+            <h3>Kaushik Das</h3>
+            <h4>Senior Partner, Southeast Asia, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Advises clients in the energy, mining, and consumer industries, as well as the public sector, to design and implement long-term...</p>
+        </div>
+        <div class="team-member">
+            <img src="yiping_goh_standard_profile_1536x1152.webp" alt="Suyin Soon">
+            <h3>Suyin Soon</h3>
+            <h4>Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Helps consumer-goods companies in Southeast Asia build winning strategies and rethink marketing and sales...</p>
+        </div>
+        <div class="team-member">
+            <img src="yiping_goh_standard_profile_1536x1152.webp" alt="Asilah Azil">
+            <h3>Asilah Azil</h3>
+            <h4>Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Helps institutions achieve meaningful impact across sustainability efforts, entrepreneurial ventures, and ways of working...</p>
+        </div>
+        <div class="team-member">
+            <img src="hari_govindahari_fc_mask_profile_1536x1152.webp" alt="Tracy Lee">
+            <h3>Tracy Lee</h3>
+            <h4>Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Leads McKinsey's Real Estate Practice in Southeast Asia and advises clients on all aspects of infrastructure development, with...</p>
+        </div>
+        <div class="team-member">
+            <img src="yiping_goh_standard_profile_1536x1152.webp" alt="Tracy Lee">
+            <h3>Tracy Lee</h3>
+            <h4>Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Leads McKinsey's Real Estate Practice in Southeast Asia and advises clients on all aspects of infrastructure development, with...</p>
+        </div>
+        <div class="team-member">
+            <img src="hari_govindahari_fc_mask_profile_1536x1152.webp" alt="Tracy Lee">
+            <h3>Tracy Lee</h3>
+            <h4>Partner, Singapore</h4>
+            <hr width="50px" style="margin-top: 10px; color: #666666;">
+            <p>Leads McKinsey's Real Estate Practice in Southeast Asia and advises clients on all aspects of infrastructure development, with...</p>
+        </div>
+    </div>
+
+    <div class="cta-button">
+        <a href="#">Meet our people</a>
+    </div>
+</div>
+
+</body>
+</html>
